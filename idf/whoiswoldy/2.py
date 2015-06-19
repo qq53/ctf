@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-with open('data2','r') as f:
+with open('sort','r') as f:
 	d = []
 	i = f.readline().strip()
 	k = 1
@@ -16,4 +16,5 @@ with open('data2','r') as f:
 				d.append(i + ' %d' % k)
 			i = j
 			k = 1
-	print(str(d))
+	with open('sort_count','w') as f1:
+		f1.write(str(d))

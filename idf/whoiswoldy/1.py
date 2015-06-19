@@ -8,6 +8,7 @@ def findSubStr(s,d):
 	for i in range(fullLen - subLen + 1):
 		if d[i:i+subLen] == s:
 			indexes.append(i)
+			i = i + subLen
 	return indexes
 
 with open('whoiswoldy.txt','r') as f:
