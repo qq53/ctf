@@ -1,0 +1,1 @@
+aircrack-ng -w pass.txt wifi-crack.cap
