@@ -120,7 +120,7 @@ main:
 	push len2
 	push buf
 	call snprintf
-	add esp,16
+	add esp,4*7
 	push buf
 	call printf
 	add esp,4
